@@ -1,0 +1,63 @@
+/* shortcuts */
+$bg: "bg";
+$fr: "fr";
+$pr: "pr";
+$pr-f: "pr-f";
+$sd: "sd";
+$sd-f: "sd-f";
+$tx: "tx";
+$tx-m: "tx-m";
+$br: "br";
+$dt: "dt";
+$bd-bg: "bd-bg";
+
+$themes: (
+    default: (
+        bg: $bg-light,
+        fr: $foreground-light,
+        pr: $primary-light,
+        pr-f: $primary-foreground-light,
+        sd: $secondary-light,
+        sd-f: $secondary-foreground-light,
+        tx: $text-light,
+        tx-m: $text-muted-light,
+        br: $border-light,
+        dt: $dots-light,
+        bd-bg: $bd-bg-light
+    ),
+    dark: (
+        bg: $bg-dark,
+        fr: $foreground-dark,
+        pr: $primary-dark,
+        pr-f: $primary-foreground-dark,
+        sd: $secondary-dark,
+        sd-f: $secondary-foreground-dark,
+        tx: $text-dark,
+        tx-m: $text-muted-dark,
+        br: $border-dark,
+        dt: $dots-dark,
+        bd-bg: $bd-bg-dark
+    )
+);
+
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), "#{$key}");
+                $theme-map: map-merge(
+                    $theme-map,
+                    (
+                        $key: $value
+                    )
+                ) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+@function t($key) {
+    @return map-get($theme-map, $key);
+}
