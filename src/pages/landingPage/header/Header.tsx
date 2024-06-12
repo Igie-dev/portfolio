@@ -1,7 +1,7 @@
 import Logo from "../../components/Logo";
 import NavBtn from "./NavBtn";
 import { useRef } from "react";
-import ThemeToggle from "./ThemeToggle";
+import ToggleTheme from "../../../components/ToggleTheme";
 export const navLink = [
   { title: "Home", targetId: "header" },
   { title: "About", targetId: "about" },
@@ -26,10 +26,9 @@ export default function Header() {
       <div className="header_div">
         <Logo />
         <div className="btn_wrapper_mobile">
-          <ThemeToggle
-            wrapperClassName="theme_toggle_btn_wrapper_mobile"
-            btnClassName="theme_toggle_btn_mobile"
-          />
+          <div className="theme_toggle_btn_wrapper_mobile">
+            <ToggleTheme btnClassNames="theme_toggle_btn_mobile" />
+          </div>
           {/* show nav */}
           <button
             type="button"
@@ -58,10 +57,9 @@ export default function Header() {
                 </li>
               );
             })}
-            <ThemeToggle
-              wrapperClassName="theme_toggle_btn_wrapper_desk"
-              btnClassName="theme_toggle_btn_desk"
-            />
+            <div className="theme_toggle_btn_wrapper_desk">
+              <ToggleTheme btnClassNames="theme_toggle_btn_desk" />
+            </div>
           </ul>
         </nav>
       </div>
