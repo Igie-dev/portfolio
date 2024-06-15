@@ -22,13 +22,21 @@ $secondary-foreground-dark: rgba(70, 120, 206, 0.856);
 $text-dark: hsl(240, 11%, 93%);
 $text-muted-dark: hsla(240, 2%, 81%, 0.767);
 $border-dark: rgba(23, 25, 35, 0.829);
-$dots-dark:rgb(27, 34, 76);
+$dots-dark:rgb(27, 34, 71);
 
 //social media icons
 $icon-insta: linear-gradient(45deg, #f58529, #dd2a7b, #515bd4);
 $icon-facebook: #1877f2;
 $icon-linkin: #0a66c2;
 $icon-github: #181717;
+
+//tect
+$javascript:#F7DF1E;
+$html:#E34F26;
+$css: #1572B6;
+$react:#61DAFB;
+$git: #e64215;
+$tailwindcss: #38B2AC;
 
 // Screens
 $screen-sm: 640px;
@@ -37,7 +45,7 @@ $screen-lg: 1024px;
 $screen-xl: 1280px;
 $screen-2xl: 1536px;
 
-$fancy-font: "Holtwood One SC", serif;
+$fancy-font: "Anton", sans-serif;
 
 %section_container {
     width: 100%;
@@ -50,6 +58,7 @@ $fancy-font: "Holtwood One SC", serif;
     padding: 0 1rem;
     overflow-x: hidden;
 }
+
 
 @media (min-width: $screen-sm) {
     %section_container {
