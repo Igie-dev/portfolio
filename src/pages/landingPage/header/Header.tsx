@@ -6,7 +6,7 @@ import ToggleTheme from "../../../components/ToggleTheme";
 export const navLink = [
   { title: "Home", targetId: "header" },
   { title: "About", targetId: "about" },
-  { title: "Portfilio", targetId: "portfilio" },
+  { title: "Portfolio", targetId: "portfolio" },
   { title: "Contact", targetId: "contact" },
 ];
 export default function Header() {

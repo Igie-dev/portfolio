@@ -4,6 +4,7 @@
 @import "../../../styles/btns";
 .contact {
     @extend %section_container;
+    margin-top: 20rem;
     height: 95vh;
     display: flex;
     align-items: center;

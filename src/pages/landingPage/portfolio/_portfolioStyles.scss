@@ -1,0 +1,81 @@
+@import "../../../styles/settings";
+@import "../../../styles/color_theme";
+@import "../../../styles/base";
+@import "../../../styles/btns";
+.portfolio {
+    @extend %section_container;
+    margin-top: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .landing_portfolio_heading {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        h2 {
+            font-weight: 900;
+            font-family: $fancy_font;
+            font-size: clamp(1.5rem, 5vw, 2rem);
+        }
+        p {
+            font-size: clamp(0.8rem, 5vw, 1rem);
+        }
+    }
+
+    .landing_portfolio_footer {
+        width: 100%;
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            @extend %share_btn;
+            @extend %btn_lg;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            background-color: transparent !important;
+            i {
+                font-size: 1.2rem;
+                pointer-events: none;
+            }
+            @include themed() {
+                background-color: t($sd);
+            }
+
+            p {
+                margin: 0;
+                font-size: 1.2em;
+                pointer-events: none;
+            }
+            &:hover {
+                @include themed() {
+                    border-color: t($sd);
+                    color: t($sd);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-lg) {
+    .portfolio {
+        .landing_portfolio_heading {
+            p {
+                font-size: clamp(0.8rem, 5vw, 1rem);
+                max-width: 45rem;
+            }
+        }
+    }
+}
+
+// @media (min-width: $screen-2xl) {
+//     .portfolio {
+
+//     }
+// }

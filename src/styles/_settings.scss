@@ -22,7 +22,7 @@ $secondary-foreground-dark: rgba(70, 120, 206, 0.856);
 $text-dark: hsl(240, 11%, 93%);
 $text-muted-dark: hsla(240, 2%, 81%, 0.767);
 $border-dark: rgba(23, 25, 35, 0.829);
-$dots-dark:rgb(27, 34, 71);
+$dots-dark: rgb(27, 34, 71);
 
 //social media icons
 $icon-insta: linear-gradient(45deg, #f58529, #dd2a7b, #515bd4);
@@ -31,13 +31,19 @@ $icon-linkin: #0a66c2;
 $icon-github: #181717;
 
 //tect
-$javascript:#F7DF1E;
-$html:#E34F26;
-$css: #1572B6;
-$react:#61DAFB;
+$javascript: #f7df1e;
+$html: #e34f26;
+$css: #1572b6;
+$react: #61dafb;
 $git: #e64215;
-$tailwindcss: #38B2AC;
-
+$tailwindcss: #38b2ac;
+$redux: #764abc;
+$docker: #2496ed;
+$socketIo: #eee9e9;
+$prisma: #2d3748;
+$expressjs: #000000;
+$postgresql: #336791;
+$typescript: #3178c6;
 // Screens
 $screen-sm: 640px;
 $screen-md: 768px;
@@ -58,7 +64,6 @@ $fancy-font: "Anton", sans-serif;
     padding: 0 1rem;
     overflow-x: hidden;
 }
-
 
 @media (min-width: $screen-sm) {
     %section_container {

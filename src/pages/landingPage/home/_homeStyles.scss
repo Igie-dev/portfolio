@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     padding-top: 5rem;
-    position:relative;
+    position: relative;
     overflow: visible;
     .hero_wrapper {
         width: 100%;
@@ -17,33 +17,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        .hero_role,.hero_hello,.hero_name {
-           text-transform: uppercase;
-           font-family: $fancy-font;
-           letter-spacing: 1px;
+        .hero_role,
+        .hero_hello,
+        .hero_name {
+            text-transform: uppercase;
+            font-family: $fancy-font;
+            letter-spacing: 1px;
         }
-        .hero_role{
-            font-size: clamp(2.8rem,5vw,5.5rem);
+        .hero_role {
+            font-size: clamp(2.8rem, 5vw, 5.5rem);
             font-weight: 900;
-            
         }
-        .hero_hello{
-            margin-top:1rem;
-            font-size: clamp(.5rem, 5vw, .9rem);
+        .hero_hello {
+            margin-top: 1rem;
+            font-size: clamp(0.5rem, 5vw, 0.9rem);
             font-weight: 600;
             @include themed() {
                 color: t($sd);
             }
         }
-        
+
         .hero_name {
-            font-size: clamp(1.8rem,5vw, 2.5rem);
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
             font-weight: 900;
         }
-        .hero_prag{
-            margin-top:1rem;
+        .hero_prag {
+            margin-top: 1rem;
             width: 80%;
-            font-size: clamp(.4rem, 5vw, .9rem);
+            font-size: clamp(0.4rem, 5vw, 0.9rem);
             text-align: center;
         }
 
@@ -55,8 +56,8 @@
             gap: 1rem;
             display: flex;
             align-items: center;
-            position:relative;
-            color: $bd-bg-light !important;
+            position: relative;
+            color: $text-dark !important;
             a {
                 text-decoration: none;
             }
@@ -76,183 +77,164 @@
         }
     }
 
-    .home_circle{
+    .home_circle {
         width: 80%;
-        height: 60%;
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
+        height: 65%;
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -48%);
         z-index: 0;
-        div[data-tech="javascript"]{
-           color: $javascript; 
-           &::before{
-            background-color:  $javascript; 
+        div[data-tech="javascript"] {
+            color: $javascript;
+            &::before {
+                background-color: $javascript;
+            }
         }
+        div[data-tech="html"] {
+            color: $html;
+            &::before {
+                background-color: $html;
+            }
         }
-        div[data-tech="html"]{
-            color: $html; 
-            &::before{
-                background-color: $html; 
+        div[data-tech="css"] {
+            color: $css;
+            &::before {
+                background-color: $css;
             }
-         }
-         div[data-tech="css"]{
-            color: $css; 
-            &::before{
-                background-color:  $css; 
+        }
+        div[data-tech="react"] {
+            color: $react;
+            &::before {
+                background-color: $react;
             }
-         }
-         div[data-tech="react"]{
-            color: $react; 
-            &::before{
-                background-color:  $react; 
+        }
+        div[data-tech="git"] {
+            color: $git;
+            &::before {
+                background-color: $git;
             }
-         }
-         div[data-tech="git"]{
-            color: $git; 
-            &::before{
-                background-color:$git; 
+        }
+        div[data-tech="tailwindcss"] {
+            color: $tailwindcss;
+            &::before {
+                background-color: $tailwindcss;
             }
-         }
-         div[data-tech="tailwindcss"]{
-            color: $tailwindcss; 
-            &::before{
-                background-color: $tailwindcss; 
-            }
-         }
-        div{
+        }
+        div {
             height: 2.5rem;
             width: 2.5rem;
-            border-radius:50% ;
-            position:absolute;
-            display:flex;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
             align-items: center;
             justify-content: center;
             animation: spring 2s infinite;
-            &::before{
-             content:"";
-              position: absolute;
-              top:50%;
-              left:50%;
-              width: 100%;
-              height: 100%;
-              transform: translate(-50%,-50%);
-              z-index: -1;
-              border-radius: 50%;
-             $blur: 30px;
-             filter: blur($blur);
-            -webkit-backdrop-filter: blur($blur);
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: 100%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                border-radius: 50%;
+                $blur: 30px;
+                filter: blur($blur);
+                -webkit-backdrop-filter: blur($blur);
             }
-            svg{
+            svg {
                 width: 100%;
                 height: 100%;
             }
 
             //top
-            &:nth-child(1){
-                top:0%;
-                left:0%;
-               
+            &:nth-child(1) {
+                top: 0%;
+                left: 0%;
             }
 
-            &:nth-child(2){
-                top:-10%;
-                left:45%;
-           
+            &:nth-child(2) {
+                top: -10%;
+                left: 45%;
             }
-            &:nth-child(3){ 
-                top:0%;
-                left:90%;
-                
+            &:nth-child(3) {
+                top: 0%;
+                left: 90%;
             }
 
             // bottom
 
-            &:nth-child(4){
-                top:90%;
-                left:0%;
-               
+            &:nth-child(4) {
+                top: 90%;
+                left: 0%;
             }
 
-            &:nth-child(5){
-                top:100%;
-                left:45%;
-              
+            &:nth-child(5) {
+                top: 100%;
+                left: 45%;
             }
-            &:nth-child(6){
-                top:90%;
-                left:90%;
-               
+            &:nth-child(6) {
+                top: 90%;
+                left: 90%;
             }
         }
-
     }
 }
 
-
 @media (min-width: $screen-md) {
     .home {
-      
         .hero_wrapper {
             max-width: 95%;
-            .hero_role{
-                font-size: clamp(3.5rem,5vw,4rem);
-
+            .hero_role {
+                font-size: clamp(3.5rem, 5vw, 4rem);
             }
-            .hero_hello{
-                font-size: clamp(1rem,5vw, 1.2rem);
-             
+            .hero_hello {
+                font-size: clamp(1rem, 5vw, 1.2rem);
             }
             .hero_name {
-                font-size: clamp(2.8rem, 5vw,3rem);
-               
+                font-size: clamp(2.8rem, 5vw, 3rem);
             }
-            .hero_prag{
-                font-size: clamp(1.1rem,5vw, 1.2rem);
-          
+            .hero_prag {
+                font-size: clamp(1.1rem, 5vw, 1.2rem);
             }
         }
 
-        .home_circle{
-            div{
+        .home_circle {
+            div {
                 height: 3rem;
                 width: 3rem;
-                   // left
-                &:nth-child(1){
-                    top:90%;
-                    left:0%;
-                }
-    
-                &:nth-child(2){
-                    top:45%;
-                    left:-5%;
-                
+                // left
+                &:nth-child(1) {
+                    top: 90%;
+                    left: 0%;
                 }
 
-                &:nth-child(3){
-                    top:5%;
-                    left:0%;
-                    
+                &:nth-child(2) {
+                    top: 45%;
+                    left: -5%;
                 }
-    
+
+                &:nth-child(3) {
+                    top: 5%;
+                    left: 0%;
+                }
+
                 // right
-    
-                &:nth-child(4){
-                    top:90%;
-                    left:92%;
-                  
-                  
+
+                &:nth-child(4) {
+                    top: 90%;
+                    left: 92%;
                 }
-    
-                &:nth-child(5){
-                    top:45%;
-                    left:100%;
-                   
-                  
+
+                &:nth-child(5) {
+                    top: 45%;
+                    left: 100%;
                 }
-                &:nth-child(6){
-                    top:5%;
-                    left:92%;
+                &:nth-child(6) {
+                    top: 5%;
+                    left: 92%;
                 }
             }
         }
@@ -262,87 +244,81 @@
 @media (min-width: $screen-xl) {
     .home {
         height: 85vh;
-        padding-top:10rem;
+        padding-top: 10rem;
         .hero_wrapper {
             max-width: 90%;
-            .hero_role{
-                font-size: clamp(4rem,5vw, 7rem);
-               
-            } 
-            .hero_name {
-                font-size: clamp(2.7rem,5vw,3rem);
-             
+            .hero_role {
+                font-size: clamp(4rem, 5vw, 7rem);
             }
-            .hero_prag{
+            .hero_name {
+                font-size: clamp(2.7rem, 5vw, 3rem);
+            }
+            .hero_prag {
                 width: 70%;
-                font-size: clamp(1rem,5vw, 1.1rem);
+                font-size: clamp(1rem, 5vw, 1.1rem);
                 text-align: center;
             }
         }
 
-        .home_circle{
+        .home_circle {
             width: 80%;
-            div{
+            div {
                 height: 3rem;
                 width: 3rem;
                 //    // left
 
                 // right
-    
-                &:nth-child(4){
-                    top:90%;
-                    left:95%;
-                  
-                  
+
+                &:nth-child(4) {
+                    top: 90%;
+                    left: 95%;
                 }
-    
-                &:nth-child(5){
-                    top:45%;
-                    left:102%;
-                   
-                  
+
+                &:nth-child(5) {
+                    top: 45%;
+                    left: 102%;
                 }
-                &:nth-child(6){
-                    top:5%;
-                    left:95%;
+                &:nth-child(6) {
+                    top: 5%;
+                    left: 95%;
                 }
             }
         }
     }
 }
 
-
-
 @media (min-width: $screen-2xl) {
     .home {
         .hero_wrapper {
-            .hero_prag{
+            .hero_prag {
                 width: 60%;
-                font-size: clamp(1rem,5vw, 1.1rem);
+                font-size: clamp(1rem, 5vw, 1.1rem);
                 text-align: center;
             }
         }
-        .home_circle{width: 70%;}
+        .home_circle {
+            width: 70%;
+        }
     }
 }
 
 @keyframes spring {
     0% {
         transform: scale(1);
-      }
-      30% {
+    }
+    30% {
         transform: scale(1.05);
-      }
-      50% {
+    }
+    50% {
         transform: scale(0.95);
-      }
-      70% {
+    }
+    70% {
         transform: scale(1.03);
-      }
-      90% {
+    }
+    90% {
         transform: scale(0.98);
-      }
-      100% {
+    }
+    100% {
         transform: scale(1);
-      }
-  }
+    }
+}

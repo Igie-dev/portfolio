@@ -1,0 +1,172 @@
+[
+    {
+        "title":"ChatMiggle",
+        "description":"Chatmiggle is a web-based chat application built with Express.js, Socket.io, React, PostgreSQL, Prisma, and Nodemailer. The application is designed to provide real-time chat functionality with a robust backend and modern frontend. 'The entire project is containerized using Docker for ease of deployment and management.",
+        "liveLink":"",
+        "codeLink":"https://github.com/Igie-dev/chatmiggle.git",
+        "imageLink": "",
+        "techStack": [
+          
+            {
+                "name": "Javascript",
+                "percentUsed": 15
+            },
+            {
+                "name": "Typescript",
+                "percentUsed": 15
+              },
+            {
+                "name": "Reactjs",
+                "percentUsed": 15
+            },
+            {
+                "name": "Expressjs",
+                "percentUsed": 10
+            },
+            {
+                "name": "Socket.io",
+                "percentUsed": 10
+            },
+            {
+                "name": "TailwindCss",
+                "percentUsed": 10
+            },
+            {
+                "name": "Prisma",
+                "percentUsed": 5
+            },
+            {
+                "name": "Postgresql",
+                "percentUsed": 5
+            },
+          
+            {
+                "name": "Html",
+                "percentUsed": 5
+            },
+            {
+                "name": "Redux",
+                "percentUsed": 5
+            },
+        
+            {
+                "name": "Docker",
+                "percentUsed": 5
+            }
+        ]
+
+    },
+    {
+        "title":"ChatMiggle",
+        "description":"Chatmiggle is a web-based chat application built with Express.js, Socket.io, React, PostgreSQL, Prisma, and Nodemailer. The application is designed to provide real-time chat functionality with a robust backend and modern frontend. 'The entire project is containerized using Docker for ease of deployment and management.",
+        "liveLink":"",
+        "codeLink":"https://github.com/Igie-dev/chatmiggle.git",
+        "imageLink": "",
+        "techStack": [
+            {
+                "name": "Javascript",
+                "percentUsed": 15
+            },
+            {
+                "name": "Typescript",
+                "percentUsed": 15
+              },
+            {
+                "name": "Reactjs",
+                "percentUsed": 15
+            },
+            {
+                "name": "Expressjs",
+                "percentUsed": 10
+            },
+            {
+                "name": "Socket.io",
+                "percentUsed": 10
+            },
+            {
+                "name": "TailwindCss",
+                "percentUsed": 10
+            },
+            {
+                "name": "Prisma",
+                "percentUsed": 5
+            },
+            {
+                "name": "Postgresql",
+                "percentUsed": 5
+            },
+          
+            {
+                "name": "Html",
+                "percentUsed": 5
+            },
+            {
+                "name": "Redux",
+                "percentUsed": 5
+            },
+        
+            {
+                "name": "Docker",
+                "percentUsed": 5
+            }
+        ]
+
+    }
+    ,
+    {
+        "title":"ChatMiggle",
+        "description":"Chatmiggle is a web-based chat application built with Express.js, Socket.io, React, PostgreSQL, Prisma, and Nodemailer. The application is designed to provide real-time chat functionality with a robust backend and modern frontend. 'The entire project is containerized using Docker for ease of deployment and management.",
+        "liveLink":"",
+        "codeLink":"https://github.com/Igie-dev/chatmiggle.git",
+        "imageLink": "",
+        "techStack": [
+            {
+                "name": "Javascript",
+                "percentUsed": 15
+            },
+            {
+                "name": "Typescript",
+                "percentUsed": 15
+              },
+            {
+                "name": "Reactjs",
+                "percentUsed": 15
+            },
+            {
+                "name": "Expressjs",
+                "percentUsed": 10
+            },
+            {
+                "name": "Socket.io",
+                "percentUsed": 10
+            },
+            {
+                "name": "TailwindCss",
+                "percentUsed": 10
+            },
+            {
+                "name": "Prisma",
+                "percentUsed": 5
+            },
+            {
+                "name": "Postgresql",
+                "percentUsed": 5
+            },
+          
+            {
+                "name": "Html",
+                "percentUsed": 5
+            },
+            {
+                "name": "Redux",
+                "percentUsed": 5
+            },
+        
+            {
+                "name": "Docker",
+                "percentUsed": 5
+            }
+        ]
+
+    }
+]

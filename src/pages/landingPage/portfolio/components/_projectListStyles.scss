@@ -1,0 +1,285 @@
+@import "../../../../styles/settings";
+@import "../../../../styles/color_theme";
+@import "../../../../styles/base";
+@import "../../../../styles/btns";
+.landing_project_list_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 1rem 0;
+    flex-direction: column;
+    .landing_project_wrapper {
+        width: 100%;
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+
+        .project_image_container,
+        .project_details_container {
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+        }
+        .project_image_container {
+            .project_image_wrapper {
+                width: 100%;
+                height: 18rem;
+                border-radius: 10px;
+                padding: 1rem;
+                @include themed() {
+                    background-color: t($pr);
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .project_details_container {
+            .project_details_wrapper {
+                width: 100%;
+                min-height: 16rem;
+                height: fit-content;
+                border-radius: 10px;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-weight: 800;
+                    font-size: clamp(1rem, 5vw, 1.5rem);
+                }
+                p {
+                    font-size: clamp(0.8rem, 5vw, 1rem);
+                    padding-left: 0.8rem;
+                    margin-top: 1rem;
+                    opacity: 80%;
+                }
+
+                .project_link_wrapper {
+                    margin-top: 5rem;
+                    display: flex;
+                    padding: 0;
+                    gap: 4rem;
+                    a {
+                        @extend %share_btn;
+                        @extend %btn_lg;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        background-color: transparent !important;
+                        @include themed() {
+                            color: t($sd);
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 1.3em;
+                            pointer-events: none;
+                            text-decoration: underline;
+                            padding: 0;
+                        }
+                        &:hover {
+                            @include themed() {
+                                border-color: t($sd);
+                                color: t($sd);
+                            }
+                        }
+                    }
+                }
+
+                .tech_stact_wrapper {
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        font-weight: 800;
+                        font-size: clamp(0.7rem, 5vw, 0.9rem);
+                    }
+                    .tech_stack_used_bar {
+                        margin-top: 1rem;
+                        width: 95%;
+                        margin-left: 0.5rem;
+                        height: 0.9rem;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 2rem;
+                        padding: 1px 0;
+                        overflow: hidden;
+                        @include themed() {
+                            border: 1px solid t($pr);
+                        }
+                        span {
+                            height: 100%;
+                        }
+                        span[data-tech="Javascript"] {
+                            background-color: $javascript;
+                        }
+                        span[data-tech="Html"] {
+                            background-color: $html;
+                        }
+                        span[data-tech="Reactjs"] {
+                            background-color: $react;
+                        }
+                        span[data-tech="Tailwindcss"] {
+                            background-color: $tailwindcss;
+                        }
+
+                        span[data-tech="Expressjs"] {
+                            background-color: $expressjs;
+                        }
+                        span[data-tech="Redux"] {
+                            background-color: $redux;
+                        }
+                        span[data-tech="Docker"] {
+                            background-color: $docker;
+                        }
+                        span[data-tech="Socket.io"] {
+                            background-color: $socketIo;
+                        }
+                        span[data-tech="Prisma"] {
+                            background-color: $prisma;
+                        }
+                        span[data-tech="Postgresql"] {
+                            background-color: $postgresql;
+                        }
+                        span[data-tech="Typescript"] {
+                            background-color: $typescript;
+                        }
+                        span[data-tech="TailwindCss"] {
+                            background-color: $tailwindcss;
+                        }
+                    }
+                    .tech_stack_list {
+                        width: 100%;
+                        margin-left: 0.5rem;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-wrap: wrap;
+                        div {
+                            display: flex;
+                            align-items: center !important;
+                            justify-content: center !important;
+                            flex-direction: row !important;
+                            margin: 0.2rem;
+                            padding: 0.4rem 0.5rem;
+                            gap: 0.3rem;
+                            border-radius: 5px;
+                            @include themed() {
+                                background-color: t($pr);
+                            }
+                            span {
+                                height: 10px;
+                                width: 10px;
+                                margin: 0;
+                                border-radius: 50%;
+                            }
+                            span[data-tech="Javascript"] {
+                                background-color: $javascript;
+                            }
+                            span[data-tech="Html"] {
+                                background-color: $html;
+                            }
+                            span[data-tech="Reactjs"] {
+                                background-color: $react;
+                            }
+                            span[data-tech="Tailwindcss"] {
+                                background-color: $tailwindcss;
+                            }
+
+                            span[data-tech="Expressjs"] {
+                                background-color: $expressjs;
+                            }
+                            span[data-tech="Redux"] {
+                                background-color: $redux;
+                            }
+                            span[data-tech="Docker"] {
+                                background-color: $docker;
+                            }
+                            span[data-tech="Socket.io"] {
+                                background-color: $socketIo;
+                            }
+                            span[data-tech="Prisma"] {
+                                background-color: $prisma;
+                            }
+                            span[data-tech="Postgresql"] {
+                                background-color: $postgresql;
+                            }
+                            span[data-tech="Typescript"] {
+                                background-color: $typescript;
+                            }
+                            span[data-tech="TailwindCss"] {
+                                background-color: $tailwindcss;
+                            }
+                            p {
+                                padding: 0;
+                                margin: 0;
+                                font-size: clamp(0.4rem, 5vw, 0.8rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-md) {
+    .landing_project_list_container {
+        .landing_project_wrapper {
+            margin-top: 15rem;
+            .project_image_container {
+                justify-content: start;
+                .project_image_wrapper {
+                    width: 70%;
+                    height: 20rem;
+                }
+            }
+
+            .project_details_container {
+                justify-content: end;
+                .project_details_wrapper {
+                    width: 70%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-2xl) {
+    .landing_project_list_container {
+        div {
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .landing_project_wrapper {
+            flex-direction: row;
+            align-items: start;
+            gap: 1rem;
+            .project_image_container {
+                justify-content: start;
+                .project_image_wrapper {
+                    width: 100%;
+                    height: 23rem;
+                }
+            }
+
+            .project_details_container {
+                justify-content: end;
+                .project_details_wrapper {
+                    padding-top: 1rem;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
