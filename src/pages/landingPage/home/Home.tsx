@@ -1,3 +1,4 @@
+import "./_homeStyles.scss";
 import resume from "../../../assets/ResumeIgie.pdf";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";

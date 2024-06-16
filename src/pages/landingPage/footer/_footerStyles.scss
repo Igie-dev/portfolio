@@ -1,3 +1,7 @@
+@import "../../../styles/settings";
+@import "../../../styles/color_theme";
+@import "../../../styles/base";
+@import "../../../styles/btns";
 .footer {
     @extend %section_container;
     padding-top: 8rem;

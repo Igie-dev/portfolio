@@ -1,11 +1,12 @@
-import Logo from "../../components/Logo";
+import "./_headerStyle.scss";
+import Logo from "../../components/logo/Logo";
 import NavBtn from "./NavBtn";
 import { useRef } from "react";
 import ToggleTheme from "../../../components/ToggleTheme";
 export const navLink = [
   { title: "Home", targetId: "header" },
   { title: "About", targetId: "about" },
-  { title: "Projects", targetId: "projects" },
+  { title: "Portfilio", targetId: "portfilio" },
   { title: "Contact", targetId: "contact" },
 ];
 export default function Header() {
@@ -53,7 +54,11 @@ export default function Header() {
             {navLink.map((l) => {
               return (
                 <li key={l.title}>
-                  <NavBtn targetId={l.targetId} title={l.title} />
+                  <NavBtn
+                    targetId={l.targetId}
+                    title={l.title}
+                    handleNavClose={handleNavClose}
+                  />
                 </li>
               );
             })}

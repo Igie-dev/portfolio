@@ -1,3 +1,4 @@
+import "./_footerStyles.scss";
 import NavBtn from "../header/NavBtn";
 import { navLink } from "../header/Header";
 export default function Footer() {

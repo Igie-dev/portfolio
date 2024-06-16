@@ -1,8 +1,9 @@
 type Props = {
   targetId: string;
   title: string;
+  handleNavClose?: ()=> void
 };
-export default function NavBtn({ targetId, title }: Props) {
+export default function NavBtn({ targetId, title,handleNavClose }: Props) {
   const handleScroll = () => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -18,6 +19,10 @@ export default function NavBtn({ targetId, title }: Props) {
         left: elementLeft - windowWidth / 2 + elementWidth / 2,
         behavior: "smooth",
       });
+    }
+
+    if(handleNavClose){
+      handleNavClose()
     }
   };
   return (

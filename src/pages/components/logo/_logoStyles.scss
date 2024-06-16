@@ -1,3 +1,6 @@
+@import "../../../styles/settings";
+@import "../../../styles/color_theme";
+
 .logo {
     @include themed() {
         color: t($tx);

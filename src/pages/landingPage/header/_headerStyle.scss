@@ -1,9 +1,16 @@
-
+@import "../../../styles/settings";
+@import "../../../styles/color_theme";
+@import "../../../styles/base";
+@import "../../../styles/btns";
 .header {
     @extend %section_container;
+    width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
+    position:absolute;
+    top:0;
+    z-index: 1;
     .header_div {
         margin-top:1rem;
         width: 100%;
@@ -25,6 +32,7 @@
             height: 100vh;
             top: 0;
             left: 0;
+            z-index: 1;
             @include themed() {
                 background-color: t($pr);
             }
@@ -46,13 +54,15 @@
                 flex-direction: column;
                 gap: 1rem;
                 li {
-                    padding: 0.8rem 1.5rem;
+                    padding: 0.8rem 1rem;
                     width: fit-content;
                     list-style: none;
                     background-color: transparent;
                     button {
                         background-color: transparent;
-                        border: none;
+                        border:none;
+                        padding: .5rem  1rem;
+                        border-radius: 5px;
                         @include themed() {
                             color: t($tx);
                         }
@@ -60,7 +70,7 @@
                         cursor: pointer;
                         &:hover {
                             @include themed() {
-                                color: t($sd);
+                                background-color: t($fr);
                             }
 
                             transition: all 0.3s ease-in-out;
@@ -70,7 +80,7 @@
                 .active_nav {
                     pointer-events: none;
                     @include themed() {
-                        color: t($sd);
+                        background-color: t($sd);
                     }
                 }
             }
@@ -145,7 +155,7 @@
                     background-color: t($pr) !important;
                 }             
                 i {
-                    font-size: clamp(0.9rem, 10vw, 1.5rem);
+                    font-size: clamp(0.8rem, 10vw, 1.5rem);
                     border-color: transparent;
                     @include themed() {
                         color: t($tx);
@@ -178,9 +188,8 @@
             @include themed() {
                     background-color: t($pr) !important;
                 }
-       
                 i {
-                    font-size: clamp(0.9rem, 10vw, 1.5rem);
+                    font-size: clamp(0.8rem, 10vw, 1.5rem);
                     border-color: transparent;
                     @include themed() {
                         color: t($tx);
@@ -203,7 +212,9 @@
 @media (min-width: $screen-lg) {
     .header {
         .header_div {
-            margin-top:0
+            height: 6em;
+            margin-top:0;
+            padding-bottom:0;
         }
         .logo {
             font-size: clamp(0.9rem, 5vw, 1.2rem) !important;
@@ -237,7 +248,17 @@
                 ul {
                     flex-direction: row;
                     margin-top: 0;
-                    gap: 0.5rem !important;
+                    align-items: center;
+                    gap: 0 !important;
+                    li {
+                        button {
+                            &:hover {
+                                @include themed() {
+                                    background-color: t($pr) ;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
