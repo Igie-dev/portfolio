@@ -36,11 +36,10 @@
 
 %btn_primary {
     @extend %share_btn;
+    color: $bg-light;
     @include themed() {
-        color: t($tx);
-        border: 1px solid t($sd) !important;
+        background-color: t($sd) !important;
     }
-
     &:focus-visible {
         outline-offset: 2px;
     }

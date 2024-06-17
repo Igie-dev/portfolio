@@ -65,10 +65,6 @@
                 font-size: 1.2rem;
                 pointer-events: none;
             }
-            @include themed() {
-                background-color: t($sd);
-            }
-
             p {
                 margin: 0;
                 font-size: 1.2em;

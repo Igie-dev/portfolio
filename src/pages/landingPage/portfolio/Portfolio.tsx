@@ -17,8 +17,8 @@ export type Project = {
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="portfolio">
-      <div className="landing_portfolio_heading">
+    <section className="portfolio">
+      <div id="portfolio" className="landing_portfolio_heading">
         <h2>My Projects</h2>
         <p>
           Welcome to my portfolio! Here, you'll find a selection of projects
