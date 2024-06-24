@@ -24,7 +24,7 @@ export default function ProjectWrapper({ project }: Props) {
             </a> : null} */}
 
             <a href={project.codeLink} target="_blank">
-              <p>Souce code</p>
+              <p>Source code</p>
             </a>
             <a href={project.liveLink} target="_blank">
               <p>Live project</p>
