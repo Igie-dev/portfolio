@@ -21,7 +21,6 @@
             font-size: clamp(2rem, 5vw, 3rem);
         }
         p {
-           
             font-size: clamp(0.8rem, 5vw, 1rem);
             opacity: 0.7;
             text-align: center;
@@ -34,7 +33,7 @@
                 width: 1.5rem;
                 height: 2px;
                 margin: 0 0.8rem;
-                display:flex;
+                display: flex;
                 align-items: center;
                 justify-content: center;
                 @include themed() {
