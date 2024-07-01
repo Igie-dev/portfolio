@@ -2,7 +2,7 @@ import "./_contactStyles.scss";
 export default function Contact() {
   return (
     <section id="contact" className="contact">
-      <div className="wrapper animate_elem_reveal_in_view">
+      <div className="wrapper">
         <span>Get In Touch</span>
         <p>
           I'm currently exploring various career avenues, open to both full-time
