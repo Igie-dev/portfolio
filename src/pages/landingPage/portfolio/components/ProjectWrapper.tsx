@@ -32,19 +32,6 @@ export default function ProjectWrapper({ project }: Props) {
           </div>
           <div className="tech_stact_wrapper">
             <span>Teach stack</span>
-            <div className="tech_stack_used_bar">
-              {project.techStack.map((tech, i) => {
-                return (
-                  <span
-                    key={i}
-                    data-tech={tech.name}
-                    style={{
-                      width: `${tech.percentUsed}%`,
-                    }}
-                  />
-                );
-              })}
-            </div>
             <div className="tech_stack_list">
               {project.techStack.map((tech, i) => {
                 return (

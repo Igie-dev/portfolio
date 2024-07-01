@@ -100,68 +100,12 @@
                         font-weight: 800;
                         font-size: clamp(0.7rem, 5vw, 0.9rem);
                     }
-                    .tech_stack_used_bar {
-                        margin-top: 1rem;
-                        width: 95%;
-                        margin-left: 0.5rem;
-                        height: 0.9rem;
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 2rem;
-                        padding: 1px 0;
-                        overflow: hidden;
-                        @include themed() {
-                            border: 1px solid t($pr);
-                        }
-                        span {
-                            height: 100%;
-                        }
-                        span[data-tech="Javascript"] {
-                            background-color: $javascript;
-                        }
-                        span[data-tech="Html"] {
-                            background-color: $html;
-                        }
-                        span[data-tech="Reactjs"] {
-                            background-color: $react;
-                        }
-                        span[data-tech="Tailwindcss"] {
-                            background-color: $tailwindcss;
-                        }
-
-                        span[data-tech="Expressjs"] {
-                            background-color: $expressjs;
-                        }
-                        span[data-tech="Redux"] {
-                            background-color: $redux;
-                        }
-                        span[data-tech="Docker"] {
-                            background-color: $docker;
-                        }
-                        span[data-tech="Socket.io"] {
-                            background-color: $socketIo;
-                        }
-                        span[data-tech="Prisma"] {
-                            background-color: $prisma;
-                        }
-                        span[data-tech="Postgresql"] {
-                            background-color: $postgresql;
-                        }
-                        span[data-tech="Typescript"] {
-                            background-color: $typescript;
-                        }
-                        span[data-tech="TailwindCss"] {
-                            background-color: $tailwindcss;
-                        }
-                    }
                     .tech_stack_list {
                         width: 100%;
-                        margin-left: 0.5rem;
                         margin-top: 1rem;
                         display: flex;
                         flex-wrap: wrap;
+                        justify-content: start;
                         div {
                             display: flex;
                             align-items: center !important;
@@ -188,6 +132,9 @@
                             }
                             span[data-tech="Reactjs"] {
                                 background-color: $react;
+                            }
+                            span[data-tech="Nextjs"] {
+                                background-color: $expressjs;
                             }
                             span[data-tech="Tailwindcss"] {
                                 background-color: $tailwindcss;
