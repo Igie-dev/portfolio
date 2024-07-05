@@ -24,6 +24,9 @@
   }
 
   .sections {
-    @apply w-full m-auto border md:w-[90%] lg:max-w-[80%];
+    @apply w-full m-auto  md:w-[90%] lg:max-w-[80%];
+  }
+  i {
+    pointer-events: none;
   }
 }
