@@ -1,20 +1,20 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Loader from "./components/Loader";
 import LadingPage from "./pages/landingPage/LadingPage";
-import LandingPageLoader from "./pages/components/Loader";
 
 import ProjectsPage from "./pages/projectsPage/ProjectsPage";
-import ProjectPageLoader from "./pages/projectsPage/Loader";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LadingPage />,
-    loader: LandingPageLoader,
+    loader: Loader,
+    children: [],
   },
   {
     path: "projects",
     element: <ProjectsPage />,
-    loader: ProjectPageLoader,
+    loader: Loader,
   },
 ]);
 

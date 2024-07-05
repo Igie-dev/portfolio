@@ -1,3 +1,3 @@
 export default function ProjectsPage() {
-  return <div>ProjectsPage</div>;
+  return <main className="w-screen flex flex-col container">ProjectsPage</main>;
 }
