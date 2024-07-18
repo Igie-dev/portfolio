@@ -2,7 +2,7 @@ import Header from "./components/Header";
 
 export default function LadingPage() {
   return (
-    <main className="flex flex-col px-2 overflow-x-hidden h-fit">
+    <main className="flex flex-col px-2 overflow-x-hidden h-fit bg-background">
       {/* header */}
       <Header />
 
