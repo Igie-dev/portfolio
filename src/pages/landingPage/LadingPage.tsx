@@ -1,4 +1,6 @@
+import About from "./About";
 import Header from "./components/Header";
+import Hearo from "./Hearo";
 
 export default function LadingPage() {
   return (
@@ -7,7 +9,10 @@ export default function LadingPage() {
       <Header />
 
       {/* Hero */}
-      <section className="flex min-h-screen gap-2 sections"></section>
+      <Hearo />
+
+      {/* About  */}
+      <About />
     </main>
   );
 }
